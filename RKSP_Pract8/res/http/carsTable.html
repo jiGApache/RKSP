@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Cars Table</title>
+    <meta charset="UTF-8" />    
+    <script type="text/javascript" src="../js/cars.js"></script>
+</head>
+<body>
+    <fieldset>
+    <legend>Добавить запись об авто</legend>
+        <ul>
+            <li>
+                <label for="price">Цена</label>
+                <input type="text" id="price" size="12"/>
+            </li>
+            <li>
+                <label for="color">Цвет</label>
+                <input type="text" id="color" size="12"/>
+            </li>
+            <li>
+                <label for="year">Год выпуска</label>
+                <input type="text" id="year" size="12" />
+            </li>
+            <li>
+                <label for="add">Действия</label>
+                <input type="button" id="add" value="Добавить"/><!--onclick="addRow()"-->
+            </li>
+        </ul>
+    </fieldset>
+    <table id="tab1">
+        <thead>
+            <tr>
+                <td style="width: 100px;">Цена</td>
+                <td style="width: 100px;">Цвет</td>
+                <td style="width: 100px;">Год выпуска</td>
+            </tr>
+        </thead>
+        <tbody id="dynamic"></tbody>
+    </table>
+</body>
+</html>
